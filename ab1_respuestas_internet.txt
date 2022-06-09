@@ -144,15 +144,4 @@ find buscar el por el nombre
 
 Los comandos más utilizados desde la línea de comandos son
  pwd, ls, clear, cd, mkdir, open, touch, mv, cp, rm, cat, find. 
-
-
-
-
-
-
-
-
-
-
-
-
+ 

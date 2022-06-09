@@ -1,2 +1,323 @@
 https://fundamentos.makeitreal.camp/curriculum/git-github/resumen-git
-Andres Berrio <andrewsolutions81@gmail.com> 2022 06 09 1200
+Andres Berrio <andrewsolutions81@gmail.com> 2022 06 09 15:00
+
+1 ¿Qué es un repositorio de git?
+
+git es un control de versiones que guarda estados de un proyecto en 
+diferentes momentos
+
+    Un repositorio es una carpeta que va a almacenar todo
+    el historial de cambios de un proyecto
+
+2 ¿Cómo se crea un repositorio de git desde la teminal de tu computador?
+
+Con el comando git init en la ubicación de la carpeta deseada
+
+    Puedes crear un repositorio ejecutando el comando git init. Este comando creará 
+    una carpeta oculta llamada .git
+
+3 ¿Con qué comando se crea un commit?
+
+git commit o git commit -m "mensaje"
+
+    git commit te permite crear un commit, que es una fotografía de tu proyecto 
+    en un momento determinado. git commit -m ‘El mensaje de tu commit’ 
+    es el comando utilizado para crear un commit.
+
+4 ¿Qué comando se utiliza para incluir los cambios realizados en el siguiente commit?
+
+git add <nombre del documento> ó git add . para todos 
+
+    git add es el comando que ejecutamos para incluir cambios en el siguiente
+    commit. Al correr el comando git add .o git add [nombre de un archivo], 
+    se agregarán al índice los archivos/el archivo que tenga cambios. El índice,
+    o “staging area” , es el lugar donde se guardan temporalmente los 
+    cambios a los que se les quiere hacer commit.
+
+5 ¿Cómo consultar el estado actual de tu repositorio, para saber qué archivos
+ han tenido cambios?
+
+git status 
+
+    git status es el comando que te muestra el estado actual de tu repositorio.
+    Si hay cambios, o no, respecto al último commit.
+
+6 ¿Cómo consultar el historial de commits?
+
+git log
+
+    git log es el comando que te permite ver el historial de commits.
+
+7 ¿Cómo remover un archivo del índice?
+
+git checkout --file 
+
+    git reset HEAD [nombre de archivo] es el comando para remover 
+    un archivo del índice.
+
+8 ¿Cómo consultar los cambios que se han hecho a los archivos 
+que aún no están en el índice?
+
+git log --oneline  (NO  es git diff)
+
+    git diff muestra los cambios que se han realizado
+    en los archivos que NO están en el índice.
+
+9 ¿Cómo se configura el nombre de usuario y el email que 
+aparecerán como el autor de un commit?
+
+git config --global user.name
+git config --global user.email
+
+    git config te permite configurar el nombre de usuario y 
+    correo que se va a utilizar por defecto en cada commit 
+    para saber quién fue el autor de ese commit.
+
+10 ¿Cómo deshacer los cambios realizados en un archivo específico?
+
+git checkout --file 
+
+    git checkout --[nombre de archivo] permite deshacer 
+    cambios en un archivo específico, para volver a la versión 
+    del archivo como estaba en el último commit.
+
+11 ¿Cómo consultar los cambios que hubo en cada archivo para un commit específico?
+
+git show 
+
+    git show [id del commit] permite ver los cambios que hubo en ese commit 
+    para cada archivo.
+
+12 ¿Qué es recomendable incluir al inicio de un mensaje de commit?
+Ver respuesta
+
+una palabra describindo el que tiene el commit: cambio, creación , acutalización etc.
+
+    Es recomendable que los mensajes de un commit inicien con un verbo 
+    que represente la acción que se llevó a cabo en ese cambio.
+
+13 ¿Bajo que criterio se recomienda agrupar los 
+cambios que se van a incluir en un commit?
+
+    Al hacer un commit, intenta agruparlos por funcionalidades para que 
+    el commit realmente represente el cambio que has hecho en el código.
+    No es recomendable agrupar varias funcionalidades en un mismo commit. 
+    Es preferible separarlas en varios commits para tener un registro más 
+    preciso de la historia de cambios del código.
+
+14 ¿Qué es una rama en git?
+
+otro espacio de trabajo para adelantar codigo 
+
+    Una rama en git es una copia de todos los archivos de tu código. 
+    Cada rama tiene su propio nombre para identificarla, y su propio 
+    historial de commits.
+
+15 ¿En qué rama de git se debe guarfar la copia principal de tu código?
+
+main master producción
+
+    El master es la rama donde guardas la copia principal de tu código y 
+    todo el historial de cambios que se han hecho a este código a través de 
+    los commits.
+
+16 ¿Para qué se crean ramas diferentes al master?
+
+para ir trabajando features sin dañar la rama principal 
+
+    Crear ramas diferentes al master, permiten desviarnos de la línea 
+    principal de historial de cambios que se están haciendo en nuestro 
+    proyecto, para experimentar con otra copia de nuestro código.
+
+17 ¿Cómo listar las ramas de un repositorio de git?
+
+git branch 
+
+    git branch permite listar las ramas de un repositorio de git.
+
+18 ¿Qué comando te permite crear una nueva rama de git?
+
+git branch <branch name>
+
+    git branch [nombre de la rama] crea una nueva rama en el repositorio.
+
+19 ¿Qué comando permite ubicarse en una rama específica?
+
+git checkout <branch name>
+
+    git checkout [nombre de la rama] permite ubicarse en 
+    la nueva rama. Los cambios efectuados en los archivos, 
+    agregados al índice y a los que se les haga commit, 
+    quedarán en el historial de esta rama.
+
+20 ¿Qué comando permite crear una nueva rama de git y ubicarnos en ella? 
+
+git checkout -b <branch name>
+
+    git checkout -b [nombre de la rama] crea una rama nueva y nos ubica 
+    en esa nueva rama.
+
+21 ¿Cómo se cambia el nombre de una rama?
+
+git branch -m new branch name
+
+    git branch -m [nuevo nombre] cambia el nombre de la rama 
+    en la que se esté ubicado.
+
+22 ¿Cómo borrar una rama de git?
+
+git branch -d branch name 
+
+    git branch -d borra la rama.
+
+23 ¿Qué es el HEAD?
+
+es lo que muestra done esta ubicado el ultimo commit
+
+    HEAD es un archivo dentro del repositorio de git, 
+    que indica en qué rama se guardarán los cambios que se realicen.
+
+24 ¿Cómo se integran los cambios de otra rama en la rama en la que se está 
+ubicado, creando un commit posterior al último commit de la rama actual?
+
+git merge branch name
+
+    git merge [nombre rama] crea un nuevo commit después del 
+    último commit que exista en la rama en la que ese está ubicado. 
+    Este commit incluye los cambios de la rama que se ha integrado (merged) 
+    a la rama de la ubicación actual.
+
+25 Explica qué se debe hacer durante el proceso de integración de dos ramas 
+que tienen commits que incluyen cambios a los mismos archivos.
+
+se debe seleccionar que cambios si van a quedar en el commit 
+
+    Al intentar integrar dos ramas, en las que se tienen commits con 
+    cambios a los mismos archivos, se deberán resolver los conflictos 
+    que eventualmente existan entre los cambios realizados en cada rama, 
+    antes de integrarlas. Resueltos los conflictos, git creará un nuevo 
+    commit hacía el cual apuntarán ambas ramas integradas.
+
+26 ¿Cuáles son los posibles estados de un archivo d eun repositorio de git?
+
+no indexado y listo para add staged listo para commit 
+
+    Los archivos en el repositorio de git pueden 
+    tener alguno de los siguientes estados: 
+    untracked, staged, unmodified, modified.
+
+27 ¿En qué archivo se debe escribir el nombre de los archivos que queremos 
+omitir en el control de versiones de git?
+
+.gitignore
+
+    Si se quieren ignorar los cambios 
+    realizados a un archivo para que no 
+    aparezcan en el control de versiones, se incluye 
+    el nombre del archivo/carpeta que se quiere ignorar 
+    dentro del archivo .gitignore.
+
+28 Explica qué es un repositorio remoto.
+
+es una copia de los commits que se almasenan en una ubicacion diferente o remota
+en este caso usamos github com la pagina que guarna nuestros commits.
+
+    Un repositorio remoto, es un repositorio que se encuentra ubicado 
+    en alguna máquina que no es tu computador. Por ejemplo un repositorio 
+    que está en un servidor en internet, o en el computador de otra persona.
+    Github, Gitbucket y GitLab son servicios que permiten crear 
+    repositorios remotos.
+
+29 ¿Para qué sirve el comando git clone?
+
+descargar el repositorio remoto 
+
+    git clone permite clonar localmente un repositorio remoto.
+
+30  ¿Para qué sirve el comando git remote?
+
+para verificar si estamos conectados a un repositorio remoto
+
+    git remote permite confirmar con qué repositorio remoto se está 
+    sincronizando un repositorio local.
+
+31  ¿Con qué comando de git se consulta la url de un repositorio remoto?
+
+git remote -v
+
+git remote -v muestra las urls correspondientes a la ubicación 
+del repositorio configurado remotamente.
+
+32 ¿Con qué comando de git se actualiza un repositorio remoto?
+
+git push
+
+    git push permite actualizar un repositorio remoto.
+
+33 ¿Con qué comando se descargan los commits 
+y nuevas ramas de un repositorio remoto?
+
+    git pull
+
+34 ¿Cuáles son los posibles estados de un archivo de un repositorio de git?
+
+untracked, staged, unmodified, modified 
+
+    Los archivos en el repositorio de git pueden tener alguno de 
+    los siguientes estados: untracked, staged, unmodified, modified.
+
+35 ¿En qué archivo se debe escribir el nombre de los archivos que 
+queremos omitir en el control de versiones de git?
+
+dentro del .gitignore
+
+    Si se quieren ignorar los cambios realizados a un archivo para 
+    que no aparezcan en el control de versiones, se incluye el nombre 
+    del archivo/carpeta que se quiere ignorar dentro del archivo .gitignore.
+
+36 Explica qué es un repositorio remoto
+
+es un repositorio en otra computadora o en linea que guarda el historial de commits
+del codigo 
+
+    Un repositorio remoto, es un repositorio que se encuentra ubicado en 
+    alguna máquina que no es tu computador. Por ejemplo un repositorio 
+    que está en un servidor en internet, o en el computador de otra persona.
+
+37 ¿Para qué sirve el comando git fetch origin?
+
+para ver si hay cambios en el repositorio remoto 
+
+    git fetch origin permite consultar los cambios que han ocurrido 
+    en el repositorio remoto.
+
+38 ¿Para qué sirve el comando git reset --hard origin/[nombre de la rama]
+
+traer y remplazar la rama del repositorio remota 
+
+    git reset --hard origin/[nombre de la rama] reemplaza la rama 
+    local con la rama remota.
+
+39 ¿Para qué sirve el comando git push --force?
+
+    git push --force reemplaza una rama remota con una local.
+
+40 ¿Para qué sirve el comando git rebase origin/[nombre de la rama]?
+
+para rebase mandar los commits de rama remota a el main/master/origin 
+del local 
+
+    git rebase origin/[nombre de la rama] permite rebasar una rama 
+    remota sobre una rama local. Este comando mueve los commits que 
+    se hayan hecho localmente después de los commits que estén en master.
+
+41 Los commits y las ramas de git se actualizan automáticamente al 
+hacer cambios en los archivos de tu proyecto?
+
+no, toca hacerle push a los cambios 
+
+    Los commits y las ramas no se actualizan automáticamente 
+    entre el repositorio local y el remoto. Se deben ejecutar 
+    comandos para sincronizar ambos repositorios. git fetch 
+    origin permite consultar los cambios que han ocurrido en 
+    el repositorio remoto.
