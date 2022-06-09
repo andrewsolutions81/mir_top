@@ -1,0 +1,158 @@
+https://fundamentos.makeitreal.camp/curriculum/preparacion/resumen-preparacion
+Andres Berrio <andrewsolutions81@gmail.com> 2022 06 08 15:00
+
+1 que es el internet 
+el internet es una red de computadores interconectada para transferir datos, informacion imagenes etc
+
+Internet es una red compuesta de muchas redes, la cual permite que millones de 
+dispositivos se comuniquen e intercambien datos entre sí.
+
+2 que es una direccion ip 
+Ip es internet protocol adress es el número único que tienen los computadores para idenfiricarse, 
+pedir y recibir información de la red al identificarse. 
+
+Una dirección IP es el identificador único de un dispositivo de telecomunicaciones 
+(computador, celular, impresora, enrutador, servidor, etc.).
+
+3 que es un nombre de dominio
+el nombre de dominio es un sobrenombre a la dirección ip de una pagina determinada ejemplo goole es el 
+dominio del ip 8.8.8.8 ( me confundi con el dns de google, REVISAR)
+
+El nombre de dominio es el alias que se le da a la dirección IP para que los humanos recordemos 
+más fácilmente cómo acceder a un recurso en internet.
+ Por ejemplo la dirección IP del dominio google.com es 216.58.222.228
+
+4 que es dns 
+DNS es domain name system es una libreria de los nombres de dominio que se les dan a las ip de las paginas para que 
+todas las personas puedan acceder mas facil al dominio
+
+Un Servidor de Nombre de Dominio, DNS (Domain Name Server) es un servidor conectado a una base de datos 
+que relaciona direcciones IP con su correspondiente dominio. Cada vez que solicitamos un recurso en 
+internet (por ejemplo entrando a una página web), nuestro computador utiliza un DNS para identificar 
+la dirección IP del dominio que estamos solicitando y así dirigirnos a dicha dirección.
+
+5 que es una red 
+una red son barios individuos o unidades conectadas entre si. 
+
+Al nivel más elemental, una red es la conexión entre dos o más dispositivos, 
+que les permite comunicarse e intercambiar datos.
+
+6 que es www
+world wide web el proyecto que conecto todas las computadoras a la misma red 
+(me falta compartir documentos linkeados)
+
+La World Wide Web (WWW) es un servicio que se implementó sobre Internet, creado con 
+el objetivo de compartir documentos linkeados entre sí.
+
+7 cuales son las tenologias fundamentales que componen la www
+el uso del protocolo http para la peticion de documentos en html en pedir y recibir paquetes 
+de informacion en la red
+
+La WWW está compuesta principalmente por dos tecnologías: HTML y HTTP.
+
+8 que es HTML y para que sirve 
+HTML Hypertext Markup Language es la especificación de la arquitectura de los documentos en la web 
+cual es el encabezado el cuerpo , tener los hipervinculos de documentos adicionales como textos, parrafos
+imágenes. ( vinculos es la parte más importante)
+
+HTML (HyperText Markup Language) es un lenguaje que permite definir la estructura de 
+un documento con vínculos a otros documentos.
+
+9 que es y para que sirve el HTTP
+HTTP hypertext transfer protocol es la estandarización de cómo identificarse, pedir y recibir paquetes
+de informacion tipo html del usuario(front end) al servidor(backend)
+
+HTTP (HyperText Transfer Protocol) es el protocolo por el que se intercambian mensajes HTML.
+
+10 que es un protocolo
+Un protocolo es una serie de instrucciones y especificaciones para que los documentos puedan ser leidos
+y entendidos para su lectura, transferencia, modificación etc. (estructura y reglas para transmisor y receptor)
+
+Un protocolo es un documento que define la estructura y las reglas de los mensajes 
+que se van a intercambiar entre un transmisor y un receptor.
+
+11 que es y de que se encarga un servidor web 
+un servidor web es un computador que guarda la información, hace parte del back end, puede hacer uso de 
+bases de datos y es donde estám ubicadas las paginas en un principio. ( PROGRAMA RECIBE Y RESPONDE MENSAJES HTTP)
+
+Un servidor web es un programa que se encarga de recibir y responder mensajes HTTP.
+
+12 que son y para que sirven los lenguajes de programación 
+los lenguajes de programación es la forma de pedirle a los computadores que tarea deben hacer
+
+Un lenguaje de programación es un vocabulario, sintaxis y conjunto de reglas 
+que los computadores entienden, y que permiten a un programador 
+escribir instrucciones para que el computador las ejecute.
+
+13 que es el código
+el codigo es el uso de un lenguaje de programación para darle instrucciones al computador 
+
+El código es una serie de instrucciones que ejecuta un computador.
+
+14 a que hace referencia el front end 
+front end es el lado del usuario, lo que él ve en el navegador 
+
+Front-end se refiere al código HTML, CSS y JavaScript 
+que se muestra y se ejecuta en el navegador.
+
+15 a que hace referencia el backend
+back end es el lado del servidor donde está la información como base de datos y también las utilidades 
+y aplicaciones de cada página web 
+
+Back-end se refiere al código que se ejecuta en el servidor para acceder a 
+la base de datos y generar el HTML de forma dinámica.
+
+16 cuales son las dos herramientas principales de un desarrollador web (no son stack overflow y mdn)
+un editor de texto (vs code por ejemplo) que ayuda a mostrar claramente la sintaxis del lenguaje usado
+resalta tipos de datos, donde cierra y abre el código , el indentado de jerarquía.
+un controlador de versiones para tener el control de cambios de forma individual y además de esto 
+poder llevar control de cambios de forma grupal para trabajar con más desarrolladores.
+(LINEA DE COMANDOS PARA INTERACTUAR DIRECTAMENTE CON EL COMPUTADOR)
+
+Las herramientas principales para un desarrollador son el editor de texto, el cual permite escribir 
+código en algún lenguaje de programación, y la línea de comandos, la cual permite interactuar 
+con un computador sin necesidad de una interfaz gráfica (permite navegar por carpetas, crear 
+archivos, abrir archivos, conectarnos a servidores remotos, etc.).
+
+17 Por qué los desarrolladores usamos la línea de comandos CLI (Command Line Interface)
+es la forma tradicional de interactuar con los computadores además es más agil y permite automatizar 
+tareas repetitivas.
+
+Los desarrolladores utilizamos la línea de comandos principalemnte porque 
+la mayoría de las herramientas que necesitamos para desarrollar están hechas para 
+la línea de comandos.
+
+18 nombra los comandos más usados en la líne ade comandos y para que sirven 
+
+pwd donde está, en qué carpeta
+ls(list) que hay en esta carpeta
+cd change directory  llevarme a tal ubicación 
+cd . carpeta actual 
+cd .. carpeta anterior , madre
+mkdir (make directory) crear carpeta
+open .( solo mac ) abrir finder
+code . abre vscode  de tu carpeta actual 
+mv (move) mover documentos y carpetas 
+mv también renombra las carpetas y documentos 
+cp (copy) copia el documento
+cp -r (copy recursive) para copiar carpetas 
+rm (remove) para eliminar documentos
+rm -r eliminar carpetas(del todo no hay papelera de reciclaje)
+cat  para ver que hay dentro del cocumento 
+touch crea nuevo documento solo para mac creo no funciona en power shell
+find buscar el por el nombre 
+
+Los comandos más utilizados desde la línea de comandos son
+ pwd, ls, clear, cd, mkdir, open, touch, mv, cp, rm, cat, find. 
+
+
+
+
+
+
+
+
+
+
+
+
